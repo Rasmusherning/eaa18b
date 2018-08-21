@@ -1,0 +1,367 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        max-width: 100%;
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    body {
+        font-family: 'Fjalla One', sans-serif;
+        width: auto;
+        height: auto;
+        font-size: 15px;
+    }
+
+    #dato {
+        font-size: 16px;
+    }
+
+    header {
+        font-family: monospace;
+        margin-top: 10px;
+    }
+
+    #main_nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 00 8px 2px #000;
+    }
+
+    #main_nav:target {
+        display: block;
+    }
+
+    .access_aid {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 0;
+        padding-top: 40px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background: black 10px 10px / 20px 20px no-repeat;
+    }
+
+    #access_nav {
+        background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+        background-image: repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+    }
+
+    #access_top {
+        background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 15px, white 0);
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    #main_nav li {
+        text-align: center;
+        border-top: 1px solid #ccc;
+        margin: 2%;
+        padding-top: 4%
+    }
+
+    #main_nav li a {
+        text-align: center;
+    }
+
+    footer {
+        color: white;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    main {
+        font-family: 'Noto Serif', serif;
+        padding-right: 1%;
+        padding-left: 1%;
+        font-size: 30px;
+        color: black;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-family: 'Anton', sans-serif;
+        line-height: 20px;
+        color: black;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    h2 {
+        color: black;
+        font-size: 0.7em;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h6 {
+        font-size: 16px;
+        color: grey;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    p {
+        color: black;
+        font-size: 14px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    image1 img {
+        width: 100%;
+    }
+
+    #image4 {
+        width: 20%;
+        height: auto;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    @media screen and (min-width: 400px) {
+        body {
+            overflow: auto;
+        }
+
+        #image4 {
+            width: 20%;
+            margin-left: 8%;
+            margin-top: 5%;
+        }
+        #main_nav {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: black;
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 00 8px 2px #000;
+            color: white;
+        }
+
+        #main_nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #main_nav:target {
+            display: block;
+        }
+
+        .access_aid {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 0;
+            padding-top: 40px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background: black 10px 10px / 20px 20px no-repeat;
+        }
+
+        #access_nav {
+            background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+            background-image: repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+            margin-top: 0%;
+            margin-right: 0%;
+            background-color: white;
+        }
+
+        #access_top {
+            background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 15px, white 0);
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        #main_nav li {
+            text-align: center;
+            border-top: 1px solid #ccc;
+            margin: 2%;
+            padding-top: 4%
+        }
+
+        #main_nav li a {
+            text-align: center;
+        }
+
+        #nav-bar {
+            display: none;
+        }
+
+        @media screen and (min-width: 480px) {
+            .access_aid {
+                display: none;
+            }
+
+            #main_nav {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: black;
+                width: 100%;
+                height: 3%;
+                border-radius: 0 0 5px 5px;
+                box-shadow: 00 8px 2px #000;
+            }
+
+            #main_nav:target {
+                display: block;
+            }
+
+            .access_aid {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 40px;
+                height: 0px;
+                padding-top: 40px;
+                overflow: hidden;
+                border: 1px solid #ccc;
+                background: black 10px 10px / 20px 20px no-repeat;
+                margin-top: 7%;
+                margin-right: 7%;
+            }
+
+            #access_nav {
+                background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+                background-image: repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+                margin-top: 7%;
+                margin-right: 7%;
+            }
+
+            #access_top {
+                background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 15px, white 0);
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            #image4 img {
+                width: 50%;
+            }
+
+            #main_nav li {
+                text-align: left;
+                border-top: 1px solid #ccc;
+                margin: 2%;
+                padding-top: 4%
+            }
+
+            #main_nav li a {
+                text-align: center;
+            }
+
+
+            #nav-bar {
+                color: white;
+                display: block;
+            }
+
+            h6 {
+                font-size: 16px;
+                color: grey;
+                text-align: center;
+                margin-top: 60px;
+                margin-bottom: 44px;
+            }
+
+            #dato {
+                font-size: 16px;
+            }
+
+            p {
+                color: black;
+                font-size: 14px;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+
+            header #image {
+                width: 20em;
+                height: 10em;
+                float: left;
+            }
+
+            .image img {
+                width: 30%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            article {
+                overflow: auto;
+            }
+
+            nav {
+                text-align: right;
+            }
+
+            nav li {
+                display: inline;
+                padding-right: 17px;
+            }
+
+            nav ul {
+                padding: 3px;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-family: monospace;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
